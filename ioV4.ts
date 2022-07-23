@@ -1,4 +1,4 @@
-/* Ver4 Eureka_IO &　iːo*/
+/* NaRiKa Panta 1.0 */
 
 enum eureka_IO {
     A,
