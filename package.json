@@ -1,0 +1,7 @@
+{
+  "name": "pxt-io",
+  "private": true,
+  "license": "MIT",
+  "scripts": { "build": "pxt build", "test": "pxt test" },
+  "devDependencies": { "pxt-microbit": "4.0.24" }
+}
