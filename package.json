@@ -1,7 +1,12 @@
 {
-  "name": "pxt-io",
+  "name": "pxt-iov2",
   "private": true,
   "license": "MIT",
-  "scripts": { "build": "pxt build", "test": "pxt test" },
-  "devDependencies": { "pxt-microbit": "4.0.24" }
+  "scripts": {
+    "build": "pxt build",
+    "test": "pxt test"
+  },
+  "devDependencies": {
+    "pxt-microbit": "4.0.24"
+  }
 }

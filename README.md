@@ -1,22 +1,22 @@
-# io（イーオ）MakeCode micro:bit拡張機能
+# ioV2（イーオ）MakeCode micro:bit拡張機能
 
 ユーレカ工房のイーオ用ブロックです。フルカラーLED、人感センサー、明るさ、リレー、DS18B20温度、色、超音波きょりセンサーを利用できます。
 
-MakeCode extension for Eureka io boards: NeoPixel LEDs, motion, light, relay, DS18B20 temperature, color and ultrasonic distance sensors.
+MakeCode extension for Eureka ioV2 boards: NeoPixel LEDs, motion, light, relay, DS18B20 temperature, color and ultrasonic distance sensors.
 
 ## 追加方法
 
-MakeCodeの「拡張機能」の検索欄へ https://github.com/itibanbosi/pxt-io を入力し、ioを選択します。
+MakeCodeの「拡張機能」の検索欄へ https://github.com/itibanbosi/pxt-io を入力し、ioV2を選択します。
 名前だけの検索にはMakeCode側の承認が必要です。承認前はGitHub URLを入力してください。
 
 ## 使用例
 
 ```typescript
-io.color_green_blue_threshold(90)
-io.color_red_green_threshold(150)
-io.neopixel_blue_block(onoff.ON)
+ioV2.color_green_blue_threshold(90)
+ioV2.color_red_green_threshold(150)
+ioV2.neopixel_blue_block(onoff.ON)
 basic.forever(function () {
-    serial.writeValue("color", io.color_ID())
+    serial.writeValue("color", ioV2.color_ID())
     basic.pause(1000)
 })
 ```
@@ -37,7 +37,7 @@ basic.forever(function () {
 
 ## ブロックAPI一覧
 
-以下は `io.` に続けて呼び出すAPIです。ブロックの説明と引数はソースの各関数にも記載しています。
+以下は `ioV2.` に続けて呼び出すAPIです。ブロックの説明と引数はソースの各関数にも記載しています。
 
 - `driveForwards(second: number): void`
 - `neopixel_blue_block(mode: onoff)`
@@ -79,7 +79,7 @@ basic.forever(function () {
 
 元プロジェクト：https://makecode.microbit.org/_21U8ddPXK6f1
 
-共有プロジェクト内の拡張機能を取り出し、名前空間・翻訳キー・パッケージ名をioへ統一しました。既存の関数名と明示的なブロックIDは維持しています。元共有プロジェクトに含まれない追加センサーは含めていません。
+共有プロジェクト内の拡張機能を取り出し、互換性のため名前空間・翻訳キー・パッケージ名を元のioV2へ戻しました。公開先URLは既存のpxt-ioを維持します。io版v1.0.0から更新する場合、JavaScriptのio.はioV2.へ変更してください。既存の関数名と明示的なブロックIDは維持しています。元共有プロジェクトに含まれない追加センサーは含めていません。
 
 DS18B20依存先は削除済みフォークから元作者bsieverの同じバージョンv0.1.21へ変更しました。
 

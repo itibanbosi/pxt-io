@@ -1,4 +1,4 @@
 {
   "compilerOptions": { "target": "es5", "noImplicitAny": true, "outDir": "built", "rootDir": "." },
-  "files": ["eureka.ts", "test.ts"]
+  "files": ["eurekaV2.ts", "test.ts"]
 }

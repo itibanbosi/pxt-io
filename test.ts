@@ -1,13 +1,13 @@
 // Compile representative APIs without driving sensors during startup.
 function testIoApi(): void {
-    io.neopixel_blue_block(onoff.ON)
-    io.neopixel_white_block(onoff.OFF, 15)
-    io.microbit2_decideLight(50, io.BT.lighter)
-    io.IO_humanDetection()
-    io.IO_relay(onoff.OFF)
-    io.temperatureWithPin()
-    io.color_green_blue_threshold(90)
-    io.color_red_green_threshold(150)
-    io.color_ID()
-    io.ultrasonic_compare_auto(io.ultrasonicCompare.Shorter, 20)
+    ioV2.neopixel_blue_block(onoff.ON)
+    ioV2.neopixel_white_block(onoff.OFF, 15)
+    ioV2.microbit2_decideLight(50, ioV2.BT.lighter)
+    ioV2.IO_humanDetection()
+    ioV2.IO_relay(onoff.OFF)
+    ioV2.temperatureWithPin()
+    ioV2.color_green_blue_threshold(90)
+    ioV2.color_red_green_threshold(150)
+    ioV2.color_ID()
+    ioV2.ultrasonic_compare_auto(ioV2.ultrasonicCompare.Shorter, 20)
 }

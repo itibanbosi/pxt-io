@@ -18,7 +18,7 @@ io_neo.show()
 
 
 //% color="#ff4500" weight=94 
-namespace io {
+namespace ioV2 {
 
     export enum BT {
         //% block="lighter"

@@ -1,7 +1,7 @@
 {
-    "name": "pxt-io",
-    "version": "1.0.0",
-    "description": "イーオ io: micro:bit用フルカラーLED・人感・明るさ・リレー・温度・色・超音波センサー MakeCode extension",
+    "name": "pxt-iov2",
+    "version": "2.0.0",
+    "description": "イーオ ioV2: micro:bit用フルカラーLED・人感・明るさ・リレー・温度・色・超音波センサー MakeCode extension",
     "license": "MIT",
     "dependencies": {
         "core": "*",
@@ -12,9 +12,9 @@
     },
     "files": [
         "README.md",
-        "eureka.ts",
-        "_locales/ja/pxt-io-jsdoc-strings.json",
-        "_locales/ja/pxt-io-strings.json"
+        "eurekaV2.ts",
+        "_locales/ja/pxt-iov2-jsdoc-strings.json",
+        "_locales/ja/pxt-iov2-strings.json"
     ],
     "testFiles": [
         "test.ts"
